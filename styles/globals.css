@@ -19,7 +19,7 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  /* background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%); */
   position: absolute;
   content: "";
   z-index: 2;
@@ -30,14 +30,14 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/images/grid.svg");
+  background-image: url("/assets/images/subtle-prism.svg");
   z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0.4;
-  filter: invert(1);
+  /* opacity: 0.8; */
+  /* filter: invert(1); */
 }
 
 .gradient {
@@ -87,8 +87,12 @@
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  
 }
-
+.blue_grad{
+  /* color: rgb(59,40,204,1); */
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+}
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
